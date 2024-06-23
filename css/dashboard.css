@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    padding-top: 20px;
+}
+
+.sidebar h1 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.content h1 {
+    color: #333;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.recuadros {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cuadro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #111;
+    width: 30%;
+    height: 150px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.cuadro:hover{
+    transform: scale(1.1);
+}
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 20px;
+    width: 90%;
+    transition: background-color 0.7s ease;
+}
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;  /* Remove default triangle */
+    outline: none;  /* Remove default outline */
+}
+
+details summary::-webkit-details-marker {
+    display: none;  /* Remove default marker in WebKit browsers */
+}
+
+details p {
+    margin: 10px 0 0 0;
+}
+
+.lecciones {
+    margin-top: 30px;
+}
+
+.lecciones details {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.lecciones img {
+    width: 100%;
+    margin-top: 20px;
+}

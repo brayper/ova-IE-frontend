@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h1>Brayan Perutty</h1>
+        <h2>Bienvenido</h2>
+        <hr>
+        <ul>
+            <li><a href="cursos.html">Cursos disponibles</a></li>
+            <li><a href="cursos.html">Cursos registrados</a></li>
+            <li><a href="#">Certificados</a></li>
+            <li><a href="dashboard.html">Perfil</a></li>
+            <li><a href="#" id="logout">Cerrar sesión</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Introducción a HTML y CSS</h1>
+        <div class="contenido">
+            <details name="html">
+                <summary>¿Qué es HTML?</summary>
+                <div class="lecciones">
+                    <details class="inner-details">
+                        <summary>Titulos</summary>
+                        <p>
+                            Los encabezados HTML se definen con las etiquetas de "h1" a "h6".
+                            
+                            "h1" Define el título más importante. "h6" Define el encabezado menos importante.
+                        </p>
+                        <img src="img/Captura de pantalla 2024-06-23 113628.png" alt="">
+                    </details>
+                    <details class="inner-details">
+                        <summary>parrafos</summary>
+                        <p>Un párrafo siempre comienza en una nueva línea y suele ser un bloque de texto. <br>
+                            Un párrafo siempre comienza en una nueva línea y los navegadores agregan automáticamente un espacio en blanco (un margen) antes y después de un párrafo.
+                        </p>
+                        <img src="img/Captura de pantalla 2024-06-23 114021.png" alt="">
+                    </details>
+                    <details class="inner-details">
+                        <summary>Links</summary>
+                        <p>Enlaces HTML - Hipervínculos <br>
+                            Los enlaces HTML son hipervínculos.
+                            
+                            Puede hacer clic en un enlace y saltar a otro documento.
+                            
+                            Cuando mueves el mouse sobre un enlace, la flecha del mouse se convertirá en una manita. <br>
+                            Nota: Un enlace no tiene que ser texto. ¡Un enlace puede ser una imagen o cualquier otro elemento HTML!
+                        </p>
+                        <img src="img/Captura de pantalla 2024-06-23 115207.png" alt="">
+                    </details>
+                </div>
+            </details>
+            <details name="html">
+                <summary>¿Qué es CSS?</summary>
+                <div class="lecciones">
+                    <details class="inner-details">
+                        <summary>Especificación</summary>
+                        <p>
+                            CSS es el lenguaje que utilizamos para diseñar un documento HTML. <br>
+
+                            CSS describe cómo se deben mostrar los elementos HTML.
+                        </p>
+                    </details>
+                    <details class="inner-details">
+                        <summary>Colores</summary>
+                        <p>Los colores se especifican utilizando nombres de colores predefinidos o valores RGB, HEX, HSL, RGBA, HSLA. <br>
+                            En CSS, se puede especificar un color utilizando un nombre de color predefinido:
+                        </p>
+                        <img src="img/Captura de pantalla 2024-06-23 120131.png" alt="">
+                    </details>
+                    <details class="inner-details">
+                        <summary>Box Model</summary>
+                        <p>Todos los elementos HTML pueden considerarse cuadros. <br>
+                            En CSS, el término "modelo de caja" se utiliza cuando se habla de diseño y disposición.
+
+                            El modelo de cuadro CSS es esencialmente un cuadro que envuelve cada elemento HTML. Consta de: contenido, relleno, bordes y márgenes. La siguiente imagen ilustra el modelo de caja:
+                        </p>
+                        <img src="img/Captura de pantalla 2024-06-23 120325.png" alt="">
+                    </details>
+                </div>
+            </details>
+        </div>
+    </div>
+    <script src="js/cursohtml.js"></script>
+</body>
+</html>
