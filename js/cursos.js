@@ -1,12 +1,20 @@
 const logout = document.getElementById('logout');
+const cursos = localStorage.getItem("idCursos");
+const disponibles = document.querySelectorAll('.cuadro');
+const cursados = cursos.split(", ");
+
+disponibles.forEach(curso => {
+    if(cursados.includes(curso.id)){
+        var elemento = document.getElementById(curso.id);
+        elemento.style.display = 'none';
+    }
+})
 
 logout.addEventListener('click', function(){
     Swal.fire({
         title: '¡ Correcto !',
         text: 'Sesión finalizada con éxito',
         icon: 'success',
-        //timer: 4000, 
-        //timerProgressBar: true,
         allowOutsideClick: true, 
         allowEscapeKey: true,
         allowEnterKey: true
@@ -17,15 +25,12 @@ logout.addEventListener('click', function(){
     });
 });
 
-// Selecciona todos los elementos con la clase 'cuadro'
 const cuadros = document.querySelectorAll('.cuadro');
 
-// Itera sobre cada cuadro y agrega un event listener para el clic
 cuadros.forEach(cuadro => {
     cuadro.addEventListener('click', function() {
         const curso = this.querySelector('h3').textContent;
 
-        // Muestra un cuadro de diálogo de confirmación con SweetAlert2
         Swal.fire({
             text: `¿Deseas confirmar el registro al curso ${curso}?`,
             icon: 'question',
